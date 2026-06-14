@@ -1,0 +1,7 @@
+R >= 4.6.0
+randomForestSRC == 3.6.2
+arrow == 24.0.0
+data.table == 1.18.4
+jsonlite == 2.0.0
+digest >= 0.6.39
+tidyselect >= 1.2.1

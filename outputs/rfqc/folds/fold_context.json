@@ -1,0 +1,47 @@
+{
+  "method": "StratifiedGroupKFold",
+  "grouping_rule": "pandas_hash_of_all_approved_features",
+  "n_splits": 5,
+  "random_state": 42,
+  "rows": 444074,
+  "fraud_cases": 1860,
+  "fraud_rate": 0.0041884911073379666,
+  "unique_groups": 441922,
+  "max_folds_per_group": 1,
+  "train_path": "data/train_model_dataset.parquet",
+  "approved_features_path": "outputs/leakage_analysis/approved_features.json",
+  "train_sha256": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+  "approved_features_sha256": "4a3695d573fdac164ed384892e09650bd730063951fd7b74f7173192f47a6706",
+  "fold_summary": [
+    {
+      "fold": 0,
+      "rows": 88815,
+      "fraud_cases": 372,
+      "fraud_rate": 0.004188481675392671
+    },
+    {
+      "fold": 1,
+      "rows": 88815,
+      "fraud_cases": 372,
+      "fraud_rate": 0.004188481675392671
+    },
+    {
+      "fold": 2,
+      "rows": 88816,
+      "fraud_cases": 372,
+      "fraud_rate": 0.0041884345163033685
+    },
+    {
+      "fold": 3,
+      "rows": 88814,
+      "fraud_cases": 372,
+      "fraud_rate": 0.004188528835543946
+    },
+    {
+      "fold": 4,
+      "rows": 88814,
+      "fraud_cases": 372,
+      "fraud_rate": 0.004188528835543946
+    }
+  ]
+}

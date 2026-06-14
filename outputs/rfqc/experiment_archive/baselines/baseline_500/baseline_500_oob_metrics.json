@@ -1,0 +1,60 @@
+{
+  "implementation": "native_randomForestSRC_RFQ",
+  "model_role": "untuned_training_oob_baseline",
+  "parameters": {
+    "ntree": 500,
+    "mtry": 12,
+    "nodesize": 1,
+    "nsplit": 10,
+    "splitrule": "gini"
+  },
+  "fit_seconds": 218.434,
+  "gmean_optimized": {
+    "threshold": 0.00037531076687703194,
+    "metrics": {
+      "threshold": 0.00037531076687703194,
+      "tn": 315395,
+      "fp": 126819,
+      "fn": 427,
+      "tp": 1433,
+      "sensitivity": 0.77043010752688168,
+      "specificity": 0.71321803470717793,
+      "gmean": 0.74127231647321234,
+      "precision": 0.01117331503602283,
+      "npv": 0.99864797259215632,
+      "f1": 0.022027176586325626,
+      "p4": 0.0061312642100361083,
+      "informedness": 0.48364814223405972,
+      "markedness": 0.0098212876281791317,
+      "roc_auc": 0.78696976482120684,
+      "pr_auc": 0.022814495606381224,
+      "predicted_positive": 128252,
+      "predicted_positive_rate": 0.28880772123564991,
+      "balance_gap": 0.057212072819703752
+    }
+  },
+  "q_star_prevalence": {
+    "threshold": 0.0041884911073379666,
+    "metrics": {
+      "threshold": 0.0041884911073379666,
+      "tn": 344243,
+      "fp": 97971,
+      "fn": 603,
+      "tp": 1257,
+      "sensitivity": 0.6758064516129032,
+      "specificity": 0.77845341848064509,
+      "gmean": 0.72531637406675109,
+      "precision": 0.012667795380336196,
+      "npv": 0.99825139337559377,
+      "f1": 0.024869420702754035,
+      "p4": 0.0066526691911385208,
+      "informedness": 0.45425987009354829,
+      "markedness": 0.010919188755929898,
+      "roc_auc": 0.78696976482120684,
+      "pr_auc": 0.022814495606381224,
+      "predicted_positive": 99228,
+      "predicted_positive_rate": 0.22344924494566221,
+      "balance_gap": 0.10264696686774188
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "recorded_at_utc": "2026-06-13 18:30:33 UTC",
+  "reason": "Resume after the first test read failed during strict unseen-factor validation before prediction.",
+  "model_parameters_changed": false,
+  "threshold_changed": false,
+  "first_attempt_predictions_produced": false,
+  "first_attempt_metrics_produced": false
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "locked_for_final_test",
+  "created_at_utc": "2026-06-13T14:34:48.994159+00:00",
+  "implementation": "native_randomForestSRC_RFQ",
+  "candidate": 3,
+  "source_cv_rank": 2,
+  "source_cv_ntree": 500,
+  "ntree": 3000,
+  "mtry": 24,
+  "nodesize": 20,
+  "nsplit": 10,
+  "splitrule": "gini",
+  "threshold_rule": "q_star_prevalence",
+  "locked_threshold": 0.0041884911073379666,
+  "threshold_definition": "Full-training fraud prevalence: training_fraud / training_rows.",
+  "training_rows": 444074,
+  "training_fraud": 1860,
+  "expected_test_rows": 111020,
+  "expected_test_fraud": 465,
+  "random_state": 42,
+  "selection_reason": "Candidate 3 retained the best structural CV result. q_star_prevalence was locked before final testing because its mean G-mean was effectively tied with gmean_optimized while reducing mean validation FPR and improving class balance.",
+  "cv_metrics": {
+    "rank": 2,
+    "completed_folds": 5,
+    "mean_validation_gmean": 0.786249717333699,
+    "std_validation_gmean": 0.00938625960732457,
+    "mean_sensitivity": 0.81989247311828,
+    "mean_specificity": 0.754067030030368,
+    "mean_balance_gap": 0.0658254430879121,
+    "mean_precision": 0.0138294447814886,
+    "mean_f1": 0.0272000712591589,
+    "mean_p4": 0.00854571975017211,
+    "mean_pr_auc": 0.0283342992553499,
+    "mean_roc_auc": 0.868820803131269,
+    "mean_threshold": 0.00418849110735655,
+    "std_threshold": 9.86419385454112e-09,
+    "mean_fit_seconds": 157.1558
+  },
+  "source_files": {
+    "cv_ranking": "/root/autodl-tmp/RFQC_Colab/runs/tune_local_gini_500/cv_ranking.csv",
+    "run_context": "/root/autodl-tmp/RFQC_Colab/runs/tune_local_gini_500/run_context.json",
+    "baseline_summary": "/root/autodl-tmp/RFQC_Colab/baseline_summary.csv"
+  },
+  "source_sha256": {
+    "cv_ranking": "222de57b1fde8edb5b3b7e93b174b44a278af4e73e37eece74f90e43168a1e1e",
+    "run_context": "f2eecf0fb9d37fa548fb7898e94d5965f25443c1af04cd2520d471747787b333",
+    "baseline_summary": "b05e13b955552ae27ad05ad427c3e8303e10cf9dcdc607d44fb0b5a8cb470a97"
+  },
+  "expected_input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "test": "2e9d2e888505e03dccdd40c70ad9df007d18e760570291d8d1b0c2854f724907",
+    "approved_features": "4a3695d573fdac164ed384892e09650bd730063951fd7b74f7173192f47a6706"
+  },
+  "test_policy": "The test Parquet is read once only after the model and q* threshold are fixed. Test results cannot change this configuration."
+}

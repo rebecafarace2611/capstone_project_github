@@ -1,0 +1,44 @@
+{
+  "implementation": "native_randomForestSRC_RFQ",
+  "profile": "local",
+  "tuning_trees_override": 0,
+  "random_state": 42,
+  "folds_sha256": "5a92aa39bd0d753f68a1c941a04f85ae130d2490b65fc4c8b31389bfe2116d5d",
+  "training_sha256": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+  "parameters": [
+    {
+      "candidate": 1,
+      "ntree": 500,
+      "mtry": 24,
+      "nodesize": 10,
+      "nsplit": 10,
+      "splitrule": "gini"
+    },
+    {
+      "candidate": 2,
+      "ntree": 500,
+      "mtry": 48,
+      "nodesize": 10,
+      "nsplit": 10,
+      "splitrule": "gini"
+    },
+    {
+      "candidate": 3,
+      "ntree": 500,
+      "mtry": 24,
+      "nodesize": 20,
+      "nsplit": 10,
+      "splitrule": "gini"
+    },
+    {
+      "candidate": 4,
+      "ntree": 500,
+      "mtry": 48,
+      "nodesize": 20,
+      "nsplit": 10,
+      "splitrule": "gini"
+    }
+  ],
+  "threshold_rules": ["gmean_optimized", "q_star_prevalence"],
+  "run_signature": "8988973d7cc0433afe2b53c25f1ece3ddf774ce734ceda124975d6f4f3903ade"
+}

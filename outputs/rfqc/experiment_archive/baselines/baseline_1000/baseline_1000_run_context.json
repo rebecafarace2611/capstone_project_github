@@ -1,0 +1,31 @@
+{
+  "implementation": "native_randomForestSRC_RFQ",
+  "r_version": "R version 4.6.0 (2026-04-24)",
+  "platform": "x86_64-pc-linux-gnu",
+  "packages": {
+    "randomForestSRC": "3.6.2",
+    "arrow": "24.0.0",
+    "data.table": "1.18.4",
+    "jsonlite": "2.0.0",
+    "digest": "0.6.39",
+    "tidyselect": "1.2.1"
+  },
+  "random_state": 42,
+  "rf_cores": 20,
+  "omp_num_threads": "20",
+  "mc_cores": 1,
+  "inputs": {
+    "train": "/root/autodl-tmp/RFQC_Colab/train_model_dataset.parquet",
+    "test": "/root/autodl-tmp/RFQC_Colab/test_model_dataset.parquet",
+    "approved_features": "/root/autodl-tmp/RFQC_Colab/approved_features.json"
+  },
+  "input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "test": "2e9d2e888505e03dccdd40c70ad9df007d18e760570291d8d1b0c2854f724907",
+    "approved_features": "4a3695d573fdac164ed384892e09650bd730063951fd7b74f7173192f47a6706"
+  },
+  "approved_feature_count": 144,
+  "categorical_features": ["comarcaid", "garantia", "subramo", "formapago", "garantiaasistencia", "categoria", "tipo", "motor", "scoring", "canalnombre", "zona", "tipocliente", "tomadorcodigopostal", "tomadormunicipioid", "tomadorprovinciaid", "tomadorcomarcaid", "tomadornacionalidadid", "tomadorcategoriacarnet", "tomadornivel", "tomadorexperian", "sexo", "tipodocumento", "garantia_agrupada", "formapago_agrupado"],
+  "missing_data_policy": "Model-ready Parquet inputs must contain no missing values.",
+  "resampling_policy": "No undersampling, oversampling, SMOTE, or class weighting."
+}

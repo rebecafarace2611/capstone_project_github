@@ -1,0 +1,43 @@
+{
+  "implementation": "native_randomForestSRC_RFQ",
+  "evaluation_role": "single_untouched_final_test",
+  "parameters": {
+    "ntree": 3000,
+    "mtry": 24,
+    "nodesize": 20,
+    "nsplit": 10,
+    "splitrule": "gini"
+  },
+  "locked_candidate": 3,
+  "threshold_rule": "q_star_prevalence",
+  "final_fit_seconds": null,
+  "recovered_from_saved_model": true,
+  "resumed_after_preprocessing_failure": true,
+  "test_read_attempts": 2,
+  "first_read_produced_predictions": false,
+  "protocol_deviation": "The test Parquet was read a second time only because the first read failed during factor preprocessing before model prediction or metric calculation. Model parameters and threshold remained locked.",
+  "selected_threshold": 0.0041884911073379666,
+  "primary_test_metrics": {
+    "threshold": 0.0041884911073379666,
+    "tn": 83569,
+    "fp": 26986,
+    "fn": 90,
+    "tp": 375,
+    "sensitivity": 0.80645161290322576,
+    "specificity": 0.7559043010266383,
+    "fpr": 0.2440956989733617,
+    "fnr": 0.19354838709677424,
+    "gmean": 0.78076900730204313,
+    "precision": 0.013705639413764117,
+    "npv": 0.99892420420994754,
+    "f1": 0.026953209228778838,
+    "p4": 0.008345972881866134,
+    "informedness": 0.56235591392986395,
+    "markedness": 0.012629843623711556,
+    "roc_auc": 0.86778322277190889,
+    "pr_auc": 0.035318561860342865,
+    "predicted_positive": 27361,
+    "predicted_positive_rate": 0.24645108989371284,
+    "balance_gap": 0.050547311876587453
+  }
+}

@@ -1,0 +1,45 @@
+# Proprietary company data: never commit raw, processed, split, or metadata files
+data/*
+!data/README.md
+
+# Row-level and reconstructable derived data
+outputs/**/*.parquet
+outputs/**/*prediction*.csv
+outputs/**/fold_assignments.*
+
+# Final report documents remain local
+reports/**/*.docx
+
+# Trained model artifacts may retain proprietary information
+*.rds
+*.joblib
+*.pkl
+*.pickle
+*.model
+*.bin
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and Jupyter generated files
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Project-local R package library
+.r-library/
+.RData
+.Rhistory
+Rplots.pdf
+
+# Local logs and temporary files
+runs/
+logs/
+*.log
+*.tmp
+~$*

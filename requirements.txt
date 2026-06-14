@@ -1,0 +1,17 @@
+# Core data analysis
+numpy>=2.0,<3
+pandas>=2.2,<3
+pyarrow>=16,<25
+scipy>=1.13,<2
+
+# RFQC modelling and hyperparameter tuning
+scikit-learn>=1.5,<2
+
+# Descriptive analysis and visualisation
+matplotlib>=3.8,<4
+seaborn>=0.13,<0.14
+python-docx>=1.1,<2
+
+# Notebook environment
+jupyterlab>=4.2,<5
+ipykernel>=6.29,<8

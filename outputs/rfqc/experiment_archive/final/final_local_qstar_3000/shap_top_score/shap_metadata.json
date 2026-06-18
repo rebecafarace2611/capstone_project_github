@@ -1,0 +1,25 @@
+{
+  "generated_at_utc": "2026-06-16 17:00:09 UTC",
+  "implementation": "fastshap_model_agnostic_randomForestSRC_RFQ",
+  "model": "/root/autodl-tmp/RFQC_Colab/runs/final_local_qstar_3000/rfqc_native_model.rds",
+  "train": "/root/autodl-tmp/RFQC_Colab/train_model_dataset.parquet",
+  "test": "/root/autodl-tmp/RFQC_Colab/test_model_dataset.parquet",
+  "approved_features": "/root/autodl-tmp/RFQC_Colab/approved_features.json",
+  "prediction_file": "/root/autodl-tmp/RFQC_Colab/runs/final_local_qstar_3000/final_test_predictions.parquet",
+  "dataset": "test",
+  "selection": "top_score",
+  "background_size": 1000,
+  "explain_size": 500,
+  "nsim": 20,
+  "chunk_size": 100,
+  "seed": 42,
+  "baseline_fraud_probability": 0.0089503314047539896,
+  "feature_count": 144,
+  "output_files": {
+    "shap_values_wide": "shap_values_wide.parquet",
+    "shap_values_long": "shap_values_long.parquet",
+    "shap_feature_values_long": "shap_feature_values_long.parquet",
+    "shap_summary": "shap_summary.csv",
+    "shap_explain_rows": "shap_explain_rows.csv"
+  }
+}

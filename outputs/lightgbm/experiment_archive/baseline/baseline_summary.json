@@ -1,0 +1,63 @@
+{
+  "workflow": "lightgbm_untouched_distribution_baseline",
+  "evaluation_role": "grouped_5fold_out_of_fold_training_only",
+  "rows": 444074,
+  "fraud_cases": 1860,
+  "fraud_rate": 0.0041884911073379666,
+  "model_parameters": {
+    "objective": "binary",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "min_child_samples": 20,
+    "n_estimators": 5000,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_alpha": 0.0,
+    "reg_lambda": 0.0,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": 24,
+    "device_type": "cpu",
+    "metric": "average_precision",
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "sampling": "none",
+  "class_weight": "none",
+  "early_stopping": {
+    "metric": "average_precision",
+    "rounds": 100,
+    "best_iterations": [
+      88,
+      6,
+      6,
+      8,
+      47
+    ],
+    "recommended_final_iterations_median": 8
+  },
+  "pooled_oof_discrimination": {
+    "roc_auc": 0.8487712330297338,
+    "pr_auc_average_precision": 0.029988482070739945
+  },
+  "primary_operating_point": {
+    "threshold": 0.004255994837882099,
+    "tn": 339753,
+    "fp": 102461,
+    "fn": 370,
+    "tp": 1490,
+    "recall": 0.8010752688172043,
+    "specificity": 0.768299963366153,
+    "fpr": 0.23170003663384697,
+    "precision": 0.014333676443709056,
+    "f1": 0.028163423462588957,
+    "predicted_positive": 103951,
+    "predicted_positive_rate": 0.23408485973058543,
+    "false_positives_per_10000_legitimate": 2317.0003663384696,
+    "requested_minimum_recall": 0.8
+  },
+  "test_data_used": false
+}

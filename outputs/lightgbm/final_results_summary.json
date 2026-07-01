@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "workflow": "lightgbm_final_results",
+  "status": "complete_no_further_model_selection",
+  "completed_at_utc": "2026-07-01T14:27:33.150183+00:00",
+  "locked_model": {
+    "candidate": "C / broad trial 43",
+    "rus_legitimate_per_fraud": 5,
+    "ensemble_members": 5,
+    "trees_per_member": 248,
+    "sampling_seeds": [105042, 205042, 305042, 405042, 505042],
+    "probability_combination": "arithmetic_mean",
+    "threshold": 0.23669952663465765
+  },
+  "fixed_oof": {
+    "recall": 0.8,
+    "fpr": 0.18661779138607099,
+    "precision": 0.017711544641900657,
+    "pr_auc": 0.04858116778885125,
+    "roc_auc": 0.8965278767624355,
+    "tp": 1488,
+    "fp": 82525,
+    "fn": 372,
+    "tn": 359689
+  },
+  "final_test": {
+    "evaluation_role": "single_sealed_final_test_at_locked_threshold",
+    "recall": 0.8086021505376344,
+    "fpr": 0.19235674551128398,
+    "precision": 0.01737362535809999,
+    "f1": 0.0340163749038766,
+    "pr_auc": 0.05946076938312805,
+    "roc_auc": 0.9008436320558589,
+    "tp": 376,
+    "fp": 21266,
+    "fn": 89,
+    "tn": 89289,
+    "predicted_positive": 21642,
+    "test_consumed": true,
+    "rerun_prohibited": true
+  },
+  "rfqc_final_test_reference": {
+    "recall": 0.8064516129032258,
+    "fpr": 0.2440956989733617,
+    "precision": 0.013705639413764117,
+    "f1": 0.026953209228778838,
+    "pr_auc": 0.035318561860342865,
+    "roc_auc": 0.8677832227719089,
+    "tp": 375,
+    "fp": 26986,
+    "fn": 90,
+    "tn": 83569
+  },
+  "lightgbm_vs_rfqc": {
+    "additional_true_positives": 1,
+    "fewer_false_positives": 5720,
+    "absolute_fpr_reduction": 0.051738953462077714,
+    "relative_fpr_reduction": 0.21196175794856598,
+    "absolute_recall_change": 0.0021505376344086446,
+    "relative_precision_improvement": 0.26762603579459693,
+    "relative_pr_auc_improvement": 0.6835557919444349,
+    "absolute_roc_auc_improvement": 0.03306040928395004
+  },
+  "shap": {
+    "method": "LightGBM native exact TreeSHAP",
+    "space": "raw_score_log_odds",
+    "selection": "top_500_final_test_scores",
+    "explained_rows": 500,
+    "actual_fraud_rows": 53,
+    "legitimate_rows": 447,
+    "top_features": [
+      "garantia_agrupada",
+      "comarcaid",
+      "tomadornivel",
+      "antiguedad_poliza",
+      "garantia",
+      "aceptoculpasinantecedentes",
+      "dias_notificacion",
+      "tomadorcomarcaid",
+      "tomadormunicipioid",
+      "edad_conductor1"
+    ],
+    "top_5_mean_absolute_contribution_share": 0.8115495960718232,
+    "top_10_mean_absolute_contribution_share": 0.9024410578516451,
+    "max_member_additivity_error": 8.881784197001252e-15,
+    "max_ensemble_additivity_error": 3.3306690738754696e-15,
+    "max_reloaded_probability_error": 2.220446049250313e-16,
+    "interpretation_scope": "highest-risk alert cohort, not the full test population"
+  },
+  "input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "test": "2e9d2e888505e03dccdd40c70ad9df007d18e760570291d8d1b0c2854f724907",
+    "approved_features": "df92a415d9261858c2d6b500bc1bf0d07dfb0468969643cdb19221102c376fd0",
+    "fold_assignments": "5a92aa39bd0d753f68a1c941a04f85ae130d2490b65fc4c8b31389bfe2116d5d"
+  }
+}

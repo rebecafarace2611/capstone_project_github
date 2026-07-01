@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "workflow": "lightgbm_fixed_oof_threshold_lock",
+  "candidate": {
+    "candidate_id": "C",
+    "label": "broad_trial_43_rus_1_to_5",
+    "source": "broad_tuning",
+    "source_trial": 43,
+    "tuning_mean_fpr": 0.190593244792907,
+    "hyperparameters": {
+      "rus_ratio": 5,
+      "learning_rate": 0.026485341497747728,
+      "tree_shape": "d3_l7",
+      "min_child_samples": 50,
+      "feature_fraction": 0.9,
+      "reg_alpha": 0.01,
+      "reg_lambda": 0.01,
+      "min_split_gain": 0.1,
+      "cat_smooth": 50.0,
+      "cat_l2": 1.0
+    }
+  },
+  "model_parameters": {
+    "objective": "binary",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.026485341497747728,
+    "num_leaves": 7,
+    "max_depth": 3,
+    "min_child_samples": 50,
+    "n_estimators": 248,
+    "subsample": 1.0,
+    "colsample_bytree": 0.9,
+    "reg_alpha": 0.01,
+    "reg_lambda": 0.01,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": 24,
+    "device_type": "cpu",
+    "metric": "average_precision",
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "min_split_gain": 0.1,
+    "cat_smooth": 50.0,
+    "cat_l2": 1.0
+  },
+  "tree_count": 248,
+  "tree_count_rule": "median best iteration across candidate C's 25 confirmation fits",
+  "ensemble": {
+    "member_count": 5,
+    "combination": "arithmetic mean of fraud probabilities",
+    "seed_offsets": [
+      100000,
+      200000,
+      300000,
+      400000,
+      500000
+    ],
+    "sampling_seed_policy": "42 + seed_offset + rus_ratio * 1000 + validation_fold"
+  },
+  "n_splits": 5,
+  "expected_fits": 25,
+  "primary_recall": 0.8,
+  "threshold_rule": "highest pooled ensemble OOF score threshold attaining recall >= 0.80",
+  "input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "approved_features": "df92a415d9261858c2d6b500bc1bf0d07dfb0468969643cdb19221102c376fd0",
+    "fold_assignments": "5a92aa39bd0d753f68a1c941a04f85ae130d2490b65fc4c8b31389bfe2116d5d"
+  },
+  "confirmation_evidence_sha256": {
+    "status": "a8e705302b82ca45c70d694af6b5f59e3bd08b9e74644ac31537c610d33e2021",
+    "run_spec": "e7a3cc4d906c732d19f8eb66f0b9be3350b521f67de1a0bbc9685a642f28abf8",
+    "summary": "2c5488d93a1b9668da9f12486830311e46ea6114bec0fd2377bbe0b9a4f24529",
+    "ranking": "cdfe798e6667e1844f242ab3b601c153b6e73f2c14fb77762a7b4a2a43d013de"
+  },
+  "test_data_used": false
+}

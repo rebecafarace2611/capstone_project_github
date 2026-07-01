@@ -1,0 +1,9 @@
+{
+  "state": "complete",
+  "completed_at_utc": "2026-07-01T14:26:55.736223+00:00",
+  "run_fingerprint": "cc7aa38afa72cbe5ad151d4873310acc5654a2ab4db58ad26f0d92db9d767f71",
+  "output_dir": "/root/autodl-tmp/capstone_project_github/runs/lightgbm/final_test",
+  "test_sha256": "2e9d2e888505e03dccdd40c70ad9df007d18e760570291d8d1b0c2854f724907",
+  "final_test_summary_sha256": "6d66a5f5b0a53981b8285a308e85b9400ba5249b5a08de3dd067e1091e034886",
+  "rerun_prohibited": true
+}

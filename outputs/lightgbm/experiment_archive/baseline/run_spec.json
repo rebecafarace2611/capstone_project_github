@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "workflow": "lightgbm_untouched_distribution_baseline",
+  "model_parameters": {
+    "objective": "binary",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "max_depth": -1,
+    "min_child_samples": 20,
+    "n_estimators": 5000,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "reg_alpha": 0.0,
+    "reg_lambda": 0.0,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": 24,
+    "device_type": "cpu",
+    "metric": "average_precision",
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "early_stopping_rounds": 100,
+  "early_stopping_metric": "average_precision",
+  "primary_recall": 0.8,
+  "recall_targets": [
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9
+  ],
+  "n_splits": 5,
+  "random_state": 42,
+  "input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "approved_features": "df92a415d9261858c2d6b500bc1bf0d07dfb0468969643cdb19221102c376fd0",
+    "fold_assignments": "5a92aa39bd0d753f68a1c941a04f85ae130d2490b65fc4c8b31389bfe2116d5d"
+  }
+}

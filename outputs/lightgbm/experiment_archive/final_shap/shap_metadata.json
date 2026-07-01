@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "workflow": "lightgbm_final_ensemble_native_treeshap",
+  "status": "complete",
+  "generated_at_utc": "2026-07-01T14:27:33.140062+00:00",
+  "implementation": "LightGBM native exact TreeSHAP pred_contrib",
+  "output_space": "raw_score_log_odds",
+  "interpretation_note": "Averaged contributions exactly explain the mean member raw score. The deployed ensemble averages probabilities, so the raw-score SHAP sum is not itself an ensemble probability.",
+  "dataset": "sealed_final_test_after_metric_consumption",
+  "selection": "top_score",
+  "explain_size": 500,
+  "seed": 42,
+  "feature_count": 144,
+  "ensemble_member_count": 5,
+  "max_member_raw_score_additivity_error": 8.881784197001252e-15,
+  "max_ensemble_raw_score_additivity_error": 3.3306690738754696e-15,
+  "max_reloaded_probability_error": 2.220446049250313e-16,
+  "categorical_alignment": {
+    "comarcaid": {
+      "training_level_count": 77,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "garantia": {
+      "training_level_count": 26,
+      "unseen_test_rows_treated_as_missing": 2
+    },
+    "subramo": {
+      "training_level_count": 8,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "formapago": {
+      "training_level_count": 6,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "garantiaasistencia": {
+      "training_level_count": 5,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "categoria": {
+      "training_level_count": 3,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tipo": {
+      "training_level_count": 15,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "motor": {
+      "training_level_count": 10,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "scoring": {
+      "training_level_count": 6,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "canalnombre": {
+      "training_level_count": 5,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "zona": {
+      "training_level_count": 19,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tipocliente": {
+      "training_level_count": 3,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadorcodigopostal": {
+      "training_level_count": 2569,
+      "unseen_test_rows_treated_as_missing": 61
+    },
+    "tomadormunicipioid": {
+      "training_level_count": 1816,
+      "unseen_test_rows_treated_as_missing": 56
+    },
+    "tomadorprovinciaid": {
+      "training_level_count": 80,
+      "unseen_test_rows_treated_as_missing": 5
+    },
+    "tomadorcomarcaid": {
+      "training_level_count": 76,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadornacionalidadid": {
+      "training_level_count": 2421,
+      "unseen_test_rows_treated_as_missing": 523
+    },
+    "tomadorcategoriacarnet": {
+      "training_level_count": 13,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadornivel": {
+      "training_level_count": 11,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadorexperian": {
+      "training_level_count": 10,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "sexo": {
+      "training_level_count": 4,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tipodocumento": {
+      "training_level_count": 2,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "garantia_agrupada": {
+      "training_level_count": 10,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "formapago_agrupado": {
+      "training_level_count": 2,
+      "unseen_test_rows_treated_as_missing": 0
+    }
+  },
+  "input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "test": "2e9d2e888505e03dccdd40c70ad9df007d18e760570291d8d1b0c2854f724907",
+    "approved_features": "df92a415d9261858c2d6b500bc1bf0d07dfb0468969643cdb19221102c376fd0"
+  },
+  "final_evidence_sha256": {
+    "status": "83ac38d838d432216c01f1d3aa9dee95d3cc46095a17cacbd5da78cb362de748",
+    "run_spec": "ad888b83071c863a199e79868b69146e8b16a2af649487aa5bfeb411d8e353ef",
+    "summary": "6d66a5f5b0a53981b8285a308e85b9400ba5249b5a08de3dd067e1091e034886",
+    "predictions": "eb45c8def1f996666b9a4d6e6fd90f024a55d1757849060ff84925040f937ce9",
+    "member_metrics": "91f3272c88c4239f3657f617574910fd58d651612370124ce636b51eca07f6e8"
+  },
+  "output_files": {
+    "shap_values_wide": "shap_values_wide.parquet",
+    "shap_values_long": "shap_values_long.parquet",
+    "shap_feature_values_long": "shap_feature_values_long.parquet",
+    "shap_summary": "shap_summary.csv",
+    "shap_explain_rows": "shap_explain_rows.csv",
+    "shap_member_checks": "shap_member_checks.csv"
+  },
+  "model_or_threshold_changed": false,
+  "test_metrics_recomputed": false
+}

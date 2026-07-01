@@ -1,0 +1,99 @@
+{
+  "workflow": "lightgbm_optuna_rus_tuning",
+  "search_profile": "local",
+  "status": "tuning_complete_pending_confirmation",
+  "completed_trials": 40,
+  "best_trial": 34,
+  "best_mean_fpr": 0.18657478895360402,
+  "best_std_fpr": 0.01882051178242743,
+  "best_hyperparameters": {
+    "rus_ratio": 7,
+    "learning_rate": 0.09885115038768211,
+    "tree_shape": "d3_l7",
+    "min_child_samples": 50,
+    "feature_fraction": 0.8,
+    "reg_alpha": 0.01,
+    "reg_lambda": 0.01,
+    "min_split_gain": 0.1,
+    "cat_smooth": 100.0,
+    "cat_l2": 5.0
+  },
+  "best_model_parameters": {
+    "objective": "binary",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.09885115038768211,
+    "num_leaves": 7,
+    "max_depth": 3,
+    "min_child_samples": 50,
+    "n_estimators": 5000,
+    "subsample": 1.0,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.01,
+    "reg_lambda": 0.01,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": 24,
+    "device_type": "cpu",
+    "metric": "average_precision",
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "min_split_gain": 0.1,
+    "cat_smooth": 100.0,
+    "cat_l2": 5.0
+  },
+  "best_trial_user_attrs": {
+    "all_folds_meet_recall": true,
+    "best_iterations": [
+      53,
+      135,
+      109,
+      73,
+      116
+    ],
+    "mean_fpr": 0.18657478895360402,
+    "mean_pr_auc": 0.04930938027120596,
+    "mean_precision": 0.017876059311173403,
+    "mean_roc_auc": 0.8967200197762896,
+    "mean_training_rows": 11904.0,
+    "median_best_iteration": 109,
+    "std_fpr": 0.01882051178242743,
+    "worst_fold_fpr": 0.20885532088100944
+  },
+  "screen_reference": {
+    "baseline": {
+      "mean_fpr": 0.2289457288976039,
+      "std_fpr": 0.021669652368079,
+      "mean_pr_auc": 0.0360680344017285
+    },
+    "rus_1_to_15": {
+      "mean_fpr": 0.2136816669050746,
+      "std_fpr": 0.0124418695244816,
+      "mean_pr_auc": 0.0461615767681513
+    },
+    "rus_1_to_30": {
+      "mean_fpr": 0.2184960206320192,
+      "std_fpr": 0.0151013669666596,
+      "mean_pr_auc": 0.0422386915880057
+    }
+  },
+  "broad_tuning_reference": {
+    "best_trial": 43,
+    "mean_fpr": 0.190593244792907,
+    "std_fpr": 0.019701583085737977,
+    "hyperparameters": {
+      "rus_ratio": 5,
+      "learning_rate": 0.026485341497747728,
+      "tree_shape": "d3_l7",
+      "min_child_samples": 50,
+      "feature_fraction": 0.9,
+      "reg_alpha": 0.01,
+      "reg_lambda": 0.01,
+      "min_split_gain": 0.1,
+      "cat_smooth": 50.0,
+      "cat_l2": 1.0
+    }
+  },
+  "selection_note": "This configuration must pass a fixed-configuration confirmation run before any final model or threshold is locked.",
+  "test_data_used": false
+}

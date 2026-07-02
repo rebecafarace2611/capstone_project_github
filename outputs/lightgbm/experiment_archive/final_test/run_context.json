@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "completed_at_utc": "2026-07-01T14:26:55.725834+00:00",
+  "paths": {
+    "train": "data/train_model_dataset.parquet",
+    "test": "data/test_model_dataset.parquet",
+    "approved_features": "outputs/leakage_analysis/approved_features.json",
+    "lock_dir": "runs/lightgbm/fixed_oof_lock",
+    "output_dir": "runs/lightgbm/final_test"
+  },
+  "categorical_alignment": {
+    "comarcaid": {
+      "training_level_count": 77,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "garantia": {
+      "training_level_count": 26,
+      "unseen_test_rows_treated_as_missing": 2
+    },
+    "subramo": {
+      "training_level_count": 8,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "formapago": {
+      "training_level_count": 6,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "garantiaasistencia": {
+      "training_level_count": 5,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "categoria": {
+      "training_level_count": 3,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tipo": {
+      "training_level_count": 15,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "motor": {
+      "training_level_count": 10,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "scoring": {
+      "training_level_count": 6,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "canalnombre": {
+      "training_level_count": 5,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "zona": {
+      "training_level_count": 19,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tipocliente": {
+      "training_level_count": 3,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadorcodigopostal": {
+      "training_level_count": 2569,
+      "unseen_test_rows_treated_as_missing": 61
+    },
+    "tomadormunicipioid": {
+      "training_level_count": 1816,
+      "unseen_test_rows_treated_as_missing": 56
+    },
+    "tomadorprovinciaid": {
+      "training_level_count": 80,
+      "unseen_test_rows_treated_as_missing": 5
+    },
+    "tomadorcomarcaid": {
+      "training_level_count": 76,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadornacionalidadid": {
+      "training_level_count": 2421,
+      "unseen_test_rows_treated_as_missing": 523
+    },
+    "tomadorcategoriacarnet": {
+      "training_level_count": 13,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadornivel": {
+      "training_level_count": 11,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tomadorexperian": {
+      "training_level_count": 10,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "sexo": {
+      "training_level_count": 4,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "tipodocumento": {
+      "training_level_count": 2,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "garantia_agrupada": {
+      "training_level_count": 10,
+      "unseen_test_rows_treated_as_missing": 0
+    },
+    "formapago_agrupado": {
+      "training_level_count": 2,
+      "unseen_test_rows_treated_as_missing": 0
+    }
+  },
+  "software": {
+    "python": "3.10.8",
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "lightgbm": "4.6.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "pyarrow": "24.0.0",
+    "scikit_learn": "1.7.2"
+  },
+  "confidentiality": {
+    "models_private": true,
+    "row_level_test_predictions_private": true
+  },
+  "test_data_used": true
+}

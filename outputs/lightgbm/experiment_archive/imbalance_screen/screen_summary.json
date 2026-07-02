@@ -1,0 +1,253 @@
+{
+  "workflow": "lightgbm_imbalance_strategy_screen",
+  "evaluation_role": "grouped_5fold_training_only",
+  "primary_selection_metric": "mean fold FPR subject to recall >= 0.80",
+  "recommended_strategy": {
+    "rank": 1,
+    "strategy": "rus_1_to_15",
+    "kind": "random_undersampling",
+    "value": 15.0,
+    "source": "trained_in_screen",
+    "completed_folds": 5,
+    "all_folds_meet_recall": true,
+    "mean_fpr_at_primary_recall": 0.21368166690507467,
+    "std_fpr_at_primary_recall": 0.012441869524481675,
+    "best_fold_fpr": 0.19699693587960607,
+    "worst_fold_fpr": 0.23148504104384796,
+    "mean_recall": 0.8010752688172043,
+    "mean_precision": 0.015564334712455658,
+    "mean_pr_auc": 0.04616157676815137,
+    "std_pr_auc": 0.0031372386975673564,
+    "mean_roc_auc": 0.8833545062349236,
+    "std_roc_auc": 0.005916710048880252,
+    "best_iterations": [
+      54,
+      80,
+      92,
+      46,
+      259
+    ],
+    "median_best_iteration": 80,
+    "mean_fit_seconds": 1.4245758838951588,
+    "mean_training_rows": 23808.0,
+    "training_row_retention": 0.06701585771740745,
+    "absolute_fpr_reduction_vs_baseline": 0.015264061992529276,
+    "relative_fpr_reduction_vs_baseline": 0.06667109304037785,
+    "meets_10pct_relative_improvement": false
+  },
+  "baseline": {
+    "rank": 4,
+    "strategy": "baseline",
+    "kind": "baseline",
+    "value": null,
+    "source": "imported_completed_baseline",
+    "completed_folds": 5,
+    "all_folds_meet_recall": true,
+    "mean_fpr_at_primary_recall": 0.22894572889760395,
+    "std_fpr_at_primary_recall": 0.02166965236807901,
+    "best_fold_fpr": 0.207421729249347,
+    "worst_fold_fpr": 0.2600235182379412,
+    "mean_recall": 0.8032258064516128,
+    "mean_precision": 0.01463748085672054,
+    "mean_pr_auc": 0.036068034401728524,
+    "std_pr_auc": 0.003590936222804121,
+    "mean_roc_auc": 0.8729802678277476,
+    "std_roc_auc": 0.009179152751515138,
+    "best_iterations": [
+      88,
+      6,
+      6,
+      8,
+      47
+    ],
+    "median_best_iteration": 8,
+    "mean_fit_seconds": 3.0406243026256563,
+    "mean_training_rows": 355259.2,
+    "training_row_retention": 1.0,
+    "absolute_fpr_reduction_vs_baseline": 0.0,
+    "relative_fpr_reduction_vs_baseline": 0.0,
+    "meets_10pct_relative_improvement": false
+  },
+  "meaningful_improvement_threshold": "10% relative FPR reduction",
+  "recommended_strategy_meets_threshold": false,
+  "pooled_oof_metrics_are_secondary": true,
+  "pooled_oof_summaries": {
+    "baseline": {
+      "discrimination": {
+        "roc_auc": 0.8487712330297338,
+        "pr_auc_average_precision": 0.029988482070739945
+      },
+      "primary_operating_point": {
+        "threshold": 0.004255994837882099,
+        "tn": 339753,
+        "fp": 102461,
+        "fn": 370,
+        "tp": 1490,
+        "recall": 0.8010752688172043,
+        "specificity": 0.768299963366153,
+        "fpr": 0.23170003663384697,
+        "precision": 0.014333676443709056,
+        "f1": 0.028163423462588957,
+        "predicted_positive": 103951,
+        "predicted_positive_rate": 0.23408485973058543,
+        "false_positives_per_10000_legitimate": 2317.0003663384696,
+        "requested_minimum_recall": 0.8
+      }
+    },
+    "weight_2": {
+      "discrimination": {
+        "roc_auc": 0.8640201155952761,
+        "pr_auc_average_precision": 0.02914658890014794
+      },
+      "primary_operating_point": {
+        "threshold": 0.005782788091090124,
+        "tn": 339052,
+        "fp": 103162,
+        "fn": 367,
+        "tp": 1493,
+        "recall": 0.8026881720430108,
+        "specificity": 0.7667147580130886,
+        "fpr": 0.2332852419869113,
+        "precision": 0.01426592136066122,
+        "f1": 0.02803361028963057,
+        "predicted_positive": 104655,
+        "predicted_positive_rate": 0.23567018109594348,
+        "false_positives_per_10000_legitimate": 2332.852419869113,
+        "requested_minimum_recall": 0.8
+      }
+    },
+    "weight_5": {
+      "discrimination": {
+        "roc_auc": 0.8518454136276452,
+        "pr_auc_average_precision": 0.028274151741215156
+      },
+      "primary_operating_point": {
+        "threshold": 0.008300837890178624,
+        "tn": 330696,
+        "fp": 111518,
+        "fn": 369,
+        "tp": 1491,
+        "recall": 0.8016129032258065,
+        "specificity": 0.7478189292966754,
+        "fpr": 0.25218107070332463,
+        "precision": 0.013193639444646002,
+        "f1": 0.025960006616232403,
+        "predicted_positive": 113009,
+        "predicted_positive_rate": 0.2544823610479334,
+        "false_positives_per_10000_legitimate": 2521.810707033246,
+        "requested_minimum_recall": 0.8
+      }
+    },
+    "weight_10": {
+      "discrimination": {
+        "roc_auc": 0.8488303460189153,
+        "pr_auc_average_precision": 0.03176154329116784
+      },
+      "primary_operating_point": {
+        "threshold": 0.010286118184845676,
+        "tn": 329248,
+        "fp": 112966,
+        "fn": 340,
+        "tp": 1520,
+        "recall": 0.8172043010752689,
+        "specificity": 0.7445444965559661,
+        "fpr": 0.2554555034440339,
+        "precision": 0.013276732526247751,
+        "f1": 0.02612896017052585,
+        "predicted_positive": 114486,
+        "predicted_positive_rate": 0.25780838328747013,
+        "false_positives_per_10000_legitimate": 2554.555034440339,
+        "requested_minimum_recall": 0.8
+      }
+    },
+    "weight_20": {
+      "discrimination": {
+        "roc_auc": 0.8523340977420995,
+        "pr_auc_average_precision": 0.029124115764981154
+      },
+      "primary_operating_point": {
+        "threshold": 0.019432172225650052,
+        "tn": 331751,
+        "fp": 110463,
+        "fn": 372,
+        "tp": 1488,
+        "recall": 0.8,
+        "specificity": 0.7502046520462944,
+        "fpr": 0.24979534795370567,
+        "precision": 0.013291529329796072,
+        "f1": 0.0261486148087619,
+        "predicted_positive": 111951,
+        "predicted_positive_rate": 0.25209987524601757,
+        "false_positives_per_10000_legitimate": 2497.953479537057,
+        "requested_minimum_recall": 0.8
+      }
+    },
+    "rus_1_to_15": {
+      "discrimination": {
+        "roc_auc": 0.8801517119308411,
+        "pr_auc_average_precision": 0.03978975440817536
+      },
+      "primary_operating_point": {
+        "threshold": 0.06256030100597908,
+        "tn": 345304,
+        "fp": 96910,
+        "fn": 372,
+        "tp": 1488,
+        "recall": 0.8,
+        "specificity": 0.7808527093217311,
+        "fpr": 0.21914729067826888,
+        "precision": 0.015122258582491515,
+        "f1": 0.029683416784695486,
+        "predicted_positive": 98398,
+        "predicted_positive_rate": 0.22158018708593613,
+        "false_positives_per_10000_legitimate": 2191.472906782689,
+        "requested_minimum_recall": 0.8
+      }
+    },
+    "rus_1_to_30": {
+      "discrimination": {
+        "roc_auc": 0.8727411832815242,
+        "pr_auc_average_precision": 0.03713790146157569
+      },
+      "primary_operating_point": {
+        "threshold": 0.034416341881938865,
+        "tn": 347114,
+        "fp": 95100,
+        "fn": 372,
+        "tp": 1488,
+        "recall": 0.8,
+        "specificity": 0.7849457502476177,
+        "fpr": 0.21505424975238233,
+        "precision": 0.01540564045223009,
+        "f1": 0.030229156509019986,
+        "predicted_positive": 96588,
+        "predicted_positive_rate": 0.2175042898255696,
+        "false_positives_per_10000_legitimate": 2150.5424975238234,
+        "requested_minimum_recall": 0.8
+      }
+    },
+    "rus_1_to_60": {
+      "discrimination": {
+        "roc_auc": 0.8604702281058784,
+        "pr_auc_average_precision": 0.03475753825684172
+      },
+      "primary_operating_point": {
+        "threshold": 0.017256925097444045,
+        "tn": 345143,
+        "fp": 97071,
+        "fn": 372,
+        "tp": 1488,
+        "recall": 0.8,
+        "specificity": 0.7804886322006992,
+        "fpr": 0.21951136779930078,
+        "precision": 0.015097555778772106,
+        "f1": 0.029635825889522897,
+        "predicted_positive": 98559,
+        "predicted_positive_rate": 0.2219427392731842,
+        "false_positives_per_10000_legitimate": 2195.113677993008,
+        "requested_minimum_recall": 0.8
+      }
+    }
+  },
+  "test_data_used": false
+}

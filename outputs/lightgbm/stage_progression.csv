@@ -1,0 +1,8 @@
+stage,evaluation_role,configuration,fpr,recall,precision,pr_auc,roc_auc,note
+baseline,mean_5fold_cv,untouched_distribution,0.2289457288976039,0.8032258064516129,0.014638,0.0360680344017285,0.87298,early-stopped fold models
+imbalance_screen,mean_5fold_cv,RUS_1_to_15,0.2136816669050746,,,0.0461615767681513,,controlled strategy screen
+global_optuna,mean_5fold_cv,trial_43_RUS_1_to_5,0.190593244792907,0.8010752688172043,0.017512,0.049456,0.894216,single tuning sampling seed
+local_refinement,mean_5fold_cv,trial_34_RUS_1_to_7,0.18657478895360402,0.8010752688172043,0.017876059311173403,0.04930938027120596,0.8967200197762896,provisional single-seed optimum
+seed_confirmation,mean_of_5_seed_5fold_means,candidate_C_RUS_1_to_5,0.19084375796785524,0.8010752688172043,0.017536296293917803,0.04923144144174154,0.8949079836168407,selected for stability
+fixed_oof,pooled_5_seed_ensemble_oof,candidate_C_248_trees,0.18661779138607099,0.8,0.017711544641900657,0.04858116778885125,0.8965278767624355,locked threshold 0.23669952663465765
+final_test,single_sealed_final_test,candidate_C_5_member_ensemble,0.19235674551128398,0.8086021505376344,0.01737362535809999,0.05946076938312805,0.9008436320558589,no post-test selection permitted

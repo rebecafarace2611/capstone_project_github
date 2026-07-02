@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "completed_at_utc": "2026-07-01T14:01:35.090508+00:00",
+  "paths": {
+    "train": "data/train_model_dataset.parquet",
+    "approved_features": "outputs/leakage_analysis/approved_features.json",
+    "fold_assignments": "outputs/rfqc/folds/fold_assignments.parquet",
+    "confirmation_dir": "runs/lightgbm/seed_confirmation",
+    "output_dir": "runs/lightgbm/fixed_oof_lock"
+  },
+  "input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "approved_features": "df92a415d9261858c2d6b500bc1bf0d07dfb0468969643cdb19221102c376fd0",
+    "fold_assignments": "5a92aa39bd0d753f68a1c941a04f85ae130d2490b65fc4c8b31389bfe2116d5d"
+  },
+  "software": {
+    "python": "3.10.8",
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "lightgbm": "4.6.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "pyarrow": "24.0.0",
+    "scikit_learn": "1.7.2"
+  },
+  "confidentiality": {
+    "models_saved": false,
+    "row_level_oof_predictions_private": true,
+    "test_predictions_created": false
+  },
+  "test_data_used": false
+}

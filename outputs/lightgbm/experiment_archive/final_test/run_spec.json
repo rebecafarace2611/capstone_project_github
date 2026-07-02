@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "workflow": "lightgbm_single_final_test",
+  "one_time_evaluation": true,
+  "locked_model_spec_sha256": "75584378040d33dd563d1b1435f21f764d1304e0fce41e9db4fbb9eed499bf6e",
+  "model_parameters": {
+    "objective": "binary",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.026485341497747728,
+    "num_leaves": 7,
+    "max_depth": 3,
+    "min_child_samples": 50,
+    "n_estimators": 248,
+    "subsample": 1.0,
+    "colsample_bytree": 0.9,
+    "reg_alpha": 0.01,
+    "reg_lambda": 0.01,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": 24,
+    "device_type": "cpu",
+    "metric": "average_precision",
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "min_split_gain": 0.1,
+    "cat_smooth": 50.0,
+    "cat_l2": 1.0
+  },
+  "sampling_seeds": [
+    105042,
+    205042,
+    305042,
+    405042,
+    505042
+  ],
+  "ensemble_rule": "arithmetic mean of five fraud probabilities",
+  "locked_threshold": 0.23669952663465765,
+  "input_sha256": {
+    "train": "823ec10fbdb9f9ab5cb05144ddda5219b8cdeb41354b02b6e7fd5738cc0da2e3",
+    "test": "2e9d2e888505e03dccdd40c70ad9df007d18e760570291d8d1b0c2854f724907",
+    "approved_features": "df92a415d9261858c2d6b500bc1bf0d07dfb0468969643cdb19221102c376fd0"
+  }
+}

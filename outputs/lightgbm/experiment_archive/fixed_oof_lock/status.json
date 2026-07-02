@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "completed_at_utc": "2026-07-01T14:01:35.101206+00:00",
+  "completed_fits": 25,
+  "expected_fits": 25,
+  "locked_threshold": 0.23669952663465765
+}

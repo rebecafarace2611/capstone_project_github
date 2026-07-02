@@ -1,0 +1,20 @@
+{
+  "workflow": "lightgbm_rus_seed_confirmation",
+  "status": "confirmation_complete_pending_review",
+  "completed_fits": 75,
+  "analysis_unit": "five-fold candidate mean within each seed offset",
+  "leading_candidate_by_mean_fpr": "C",
+  "leading_mean_seed_fpr": 0.19084375796785524,
+  "leading_std_seed_fpr": 0.000626882272441304,
+  "equivalence_margin": 0.002,
+  "selection_assessment": {
+    "mean_fpr_leader": "C",
+    "leader_is_clear": false,
+    "provisional_candidate_pending_review": "C",
+    "reason": "No candidate has a clear pre-specified mean-FPR win; provisional choice comes from seed stability, worst seed, mean FPR, then PR-AUC.",
+    "clear_win_rule": "absolute mean-seed FPR advantage >= equivalence margin and at least 4 of 5 paired seed wins against each challenger"
+  },
+  "selection_note": "Review seed-level stability and paired wins before locking a candidate. Do not treat the 75 fits as independent samples.",
+  "next_step": "After candidate review, lock one configuration and a unified tree-count rule, regenerate comparable fixed-tree OOF scores, and select one pooled OOF threshold before using the test set.",
+  "test_data_used": false
+}

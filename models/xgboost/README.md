@@ -32,12 +32,22 @@ probabilities on the true-prevalence scale for comparability with RFQC.
   tuned model.
 
 ## Files
+
+Baseline stage:
 - `xgboost_model.py` — trains the baseline model and saves test-set fraud probabilities.
+- `xgboost_metrics.py` — final-test metrics for the baseline model at the q* threshold.
+- `xgboost_figures.py` — PR curve, ROC curve, and confusion matrix for the baseline model.
+
+Tuning stage:
 - `xgboost_tuning.py` — random search over hyperparameters.
 - `xgboost_tuned_model.py` — fits the selected configuration and saves test-set probabilities.
-- `xgboost_metrics.py` — computes the final-test metric table at the q* threshold.
-- `xgboost_figures.py` — generates the PR curve, ROC curve, and confusion matrix.
-- `xgboost_report_figures.py` — generates the composite figures and metrics tables used in the report.
+
+Current versions (baseline and tuned):
+- `xgboost_metrics_v2.py` — final-test metrics for both the baseline and tuned models.
+- `xgboost_figures_v2.py` — PR curve, ROC curve, and confusion matrix for both models.
+- `xgboost_report_figures_v2.py` — composite figures and metrics tables used in the report.
+
+Interpretation:
 - `xgboost_shap.py` — TreeSHAP interpretation and feature-importance plots.
 
 ## Data

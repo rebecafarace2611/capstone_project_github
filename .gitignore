@@ -43,3 +43,13 @@ logs/
 *.log
 *.tmp
 ~$*
+
+# Prototype runtime artifacts
+prototype_phase12/artifacts/models/
+prototype_phase12/artifacts/*.parquet
+prototype_phase12/artifacts/claim_pool_*.json
+prototype_phase12/artifacts/claim_pool_*.csv
+prototype_phase12/artifacts/category_map.json
+prototype_phase12/artifacts/*.model
+prototype_phase12/artifacts/*model*.txt
+prototype_phase12/artifacts/xgboost*.json

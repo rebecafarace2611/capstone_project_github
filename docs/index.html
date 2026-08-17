@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automobile Insurance Fraud Detection — Capstone Project</title>
+<style>
+  :root {
+    --orange: #D2691E;
+    --navy: #2E4057;
+    --ink: #1A1A1A;
+    --muted: #5A5A5A;
+    --panel: #F7F5F2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #FFFFFF;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  .card {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+  }
+  .eyebrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+  }
+  .authors {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 36px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  a.btn {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    background: var(--panel);
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  a.btn:hover, a.btn:focus {
+    background: var(--navy);
+    color: #FFFFFF;
+  }
+  a.btn.primary {
+    border-color: var(--orange);
+    color: #FFFFFF;
+    background: var(--orange);
+  }
+  a.btn.primary:hover, a.btn.primary:focus {
+    background: #B85A18;
+  }
+  .btn small {
+    display: block;
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 4px;
+    opacity: 0.85;
+  }
+  footer {
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">UCD Michael Smurfit Graduate Business School &middot; MSc Business Analytics Capstone</div>
+    <h1>Improving Automobile Insurance Fraud Detection Using Machine Learning and Explainable Artificial Intelligence</h1>
+    <div class="authors">Rebeca Farace &middot; Xingxing Wang &middot; Shiyi Li</div>
+
+    <div class="links">
+      <!-- Replace the href values below with your actual URLs before publishing -->
+      <a class="btn primary" href="https://fraud-review-capstone.streamlit.app/" target="_blank" rel="noopener noreferrer">
+        Open the Prototype
+        <small>Read-only display version of the Fraud Review app</small>
+      </a>
+      <a class="btn" href="https://github.com/rebecafarace2611/capstone_project_github" target="_blank" rel="noopener noreferrer">
+        View the GitHub Repository
+        <small>Source code for models, pipeline, and prototype</small>
+      </a>
+    </div>
+
+    <footer>&copy; 2026 &middot; Capstone Project, Group 12</footer>
+  </div>
+</body>
+</html>
